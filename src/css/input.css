@@ -4,6 +4,9 @@
 @theme {
     --color-coconutmilk: #fefefb;
     --color-oak: #c0ae94;
+    --color-olive: #4d4738;
+    --color-earth: #755f4a;
+    --color-seafoam: #bab9a7;
     --font-montserrat: "Montserrat";
 }
 
@@ -12,7 +15,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
 }
@@ -26,4 +29,25 @@
 
 .wave-divider .shape-fill {
     fill: #c0ae94;
+}
+
+.wave-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-footer svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 30px;
+}
+
+.wave-footer .shape-fill {
+    fill: #fefefb;
 }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>ES Studio</title>
+    <link href="./src/assets/ES_Icon.svg" rel="shortcut icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-coconutmilk">
+    <div class="page-header">
+        <nav class="fixed top-0 w-full backdrop-blur-sm bg-coconutmilk/10 border-b border-black/10 px-15 py-3 z-50">
+            <div role="content"
+                class="flex group justify-center lg:justify-between items-center font-montserrat text-black text-lg tracking-wide font-light">
+                <div class="hidden lg:flex gap-x-6">
+                    <a class="hover:font-semibold hover: text-xl hover:drop-shadow-[0_0_15px_#000]" href="/">Home</a>
+                    <a class="hover:font-semibold hover: text-xl hover:drop-shadow-[0_0_15px_#000]" href="/Nosotros">Nosotros</a>
+                </div>
+                <div class="flex">
+                    <a href="/">
+                        <img class="w-15 h-15" src="./src/assets/ES_Icon.svg" alt="ES Studio" />
+                    </a>
+                </div>
+                <div class="hidden lg:flex gap-x-6">
+                    <a class="hover:font-semibold hover: text-xl hover:drop-shadow-[0_0_15px_#000]" href="/Servicios">Servicios</a>
+                    <a class="hover:font-semibold hover: text-xl hover:drop-shadow-[0_0_15px_#000]" href="/Proyectos">Proyectos</a>
+                    <a class="hover:font-semibold hover: text-xl hover:drop-shadow-[0_0_15px_#000]" href="/Contacto">Contacto</a>
+                </div>
+                <button id="menu-btn" class="lg:hidden absolute right-5">
+                    <div class="flex flex-col gap-1.5">
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <div class="home flex flex-col lg:flex-row justify-center items-center pt-24 px-6 md:px-16 lg:px-32 lg:gap-5">
+            <div class="w-40 md:w-70">
+                <a href="/">
+                    <img src="./src/assets/ES_Logo.svg" alt="ES Studio Logo" class="w-full" />
+                </a>
+            </div>
+            <div class="md:text-left font-montserrat leading-normal">
+                <h1 class="text-base md:text-3xl">
+                    <span class="font-semibold text-black">Estética atemporal</span>,<br>
+                    espacios que <span class="font-semibold text-black">inspiran.</span>
+                </h1>
+            </div>
+        </div>
+        <div>
+            <img src="./src/assets/wave.svg" alt="wave-home">
+        </div>
+    </div>
+    <main class="main font-montserrat">
+        <section class="bg-oak text-coconutmilk text-xs md:text-3xl font-semibold px-1.5">
+            <h2>Quienes somos?</h2>
+            <br>
+            <p>Acerca de nosotros...</p>
+        </section>
+        <section class="text-xs md:text-3xl font-semibold px-1.5">
+            <h2>Servicios</h2>
+            <br>
+            <p class="">Cada detale habla de ti. <br> Cada Espacio cuenta su historia.</p>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>

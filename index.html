@@ -38,7 +38,8 @@
                 </button>
             </div>
         </nav>
-        <div class="home flex flex-col lg:flex-row justify-center items-center pt-24 px-6 md:px-20 lg:px-32 lg:gap-5">
+        <div
+            class="page-home flex flex-col lg:flex-row justify-center items-center pt-24 px-6 md:px-20 lg:px-32 lg:gap-5">
             <div class="w-40 md:w-70">
                 <a href="/">
                     <img src="./public/ES_Logo.svg" alt="ES Studio Logo" class="w-full" />
@@ -68,7 +69,7 @@
     </div>
     <main class="main font-montserrat">
         <section
-            class="flex flex-row justify-center items-center bg-oak text-coconutmilk text-xs lg:text-base px-5 py-5 gap-5 lg:gap-10 hover:cursor-pointer">
+            class="home-about-us flex flex-row justify-center items-center bg-oak text-coconutmilk text-xs lg:text-base px-5 pt-5 pb-10 gap-5 lg:gap-10 hover:cursor-pointer">
             <div class="w-40">
                 <h2 class="font-bold">Cada detalle habla de ti. <br> Cada espacio cuenta su historia.</h2>
             </div>
@@ -80,86 +81,161 @@
                     sentimos y cómo nos relacionamos.</p>
             </div>
         </section>
-        <section class="py-12">
-            <h2 class="font-montserrat font-semibold text-base md:text-2xl text-center cursor-pointer">Nuestros servicios</h2>
-            <p  class="font-montserrat text-xs md:text-base text-center cursor-pointer">Nuestro enfoque se basa en la armonía entre el espacio y la persona,<br>entre lo visual y lo emocional.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 p-6 lg:max-w-[80%] mx-auto cursor-pointer">
+        <section class="home-services pt-12">
+            <div class="px-5">
+                <h2 class="font-montserrat font-semibold text-base md:text-2xl text-center pb-2.5 cursor-pointer">
+                    Nuestros servicios</h2>
+                <p class="font-montserrat text-xs md:text-base text-center ursor-pointer">Nuestro enfoque se basa en la
+                    armonía entre el espacio y la persona,<br>entre lo visual y lo emocional.</p>
+            </div>
+            <div class="page-divider pt-6">
+                <hr class="border-olive/50 max-w-[40%] mx-auto">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 p-6 lg:max-w-[75%] mx-auto cursor-pointer">
                 <!-- card housing -->
                 <div class="backdrop-blur-3xl bg-coconutmilk/30 border border-coconutmilk/20 rounded-2xl p-6 shadow-xl">
-                    <div class="grid grid-cols-3 gap-1.5">
+                    <div class="grid grid-cols-3 gap-2">
                         <!-- image left -->
-                        <div class="col-span-2">
-                            <img src="./src/assets/housing/cabin2.png" alt="" class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                        <div class="col-span-2 aspect-[4/3]">
+                            <img src="./src/assets/housing/cabin2.png" alt=""
+                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
-                        <div class="flex flex-col gap-1.5">
-                            <img src="./src/assets/housing/cabin4.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
-                            <img src="./src/assets/housing/cabin3.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                        <div class="flex flex-col gap-2">
+                            <img src="./src/assets/housing/cabin4.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                            <img src="./src/assets/housing/cabin3.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
-                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Diseño de interiores residencial</h3>
-                        <p class="font-montserrat text-xs lg:text-sm text-center">Diseñamos a medida que reflejan tu estilo, tus nececidades y tu energía en cada rincón.</p>
+                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Diseño de interiores
+                            residencial</h3>
+                        <p class="font-montserrat text-xs lg:text-sm text-center">Diseñamos a medida que reflejan tu
+                            estilo, tus nececidades y tu energía en cada rincón.</p>
                     </div>
                 </div>
                 <!-- card commercial -->
                 <div class="backdrop-blur-3xl bg-coconutmilk/30 border border-coconutmilk/20 rounded-2xl p-6 shadow-xl">
-                    <div class="grid grid-cols-3 gap-1.5">
+                    <div class="grid grid-cols-3 gap-2">
                         <!-- image left -->
-                        <div class="col-span-2">
-                            <img src="./src/assets/commercial/terr1.png" alt="" class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                        <div class="col-span-2 aspect-[4/3]">
+                            <img src="./src/assets/commercial/terr1.png" alt=""
+                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
-                        <div class="flex flex-col gap-1.5">
-                            <img src="./src/assets/commercial/com1_bar.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
-                            <img src="./src/assets/commercial/com2.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                        <div class="flex flex-col gap-2">
+                            <img src="./src/assets/commercial/com1_bar.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                            <img src="./src/assets/commercial/com2.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
-                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Diseño de espacios comerciales</h3>
-                        <p class="font-montserrat text-xs lg:text-sm text-center">Creamos ambientes que comunican tu escencia de marca y ofrecen una experiencia memorable a tus clientes.</p>
+                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Diseño de espacios
+                            comerciales</h3>
+                        <p class="font-montserrat text-xs lg:text-sm text-center">Creamos ambientes que comunican tu
+                            escencia de marca y ofrecen una experiencia memorable a tus clientes.</p>
                     </div>
                 </div>
                 <!-- card remodeling and reforms -->
                 <div class="backdrop-blur-3xl bg-coconutmilk/30 border border-coconutmilk/20 rounded-2xl p-6 shadow-xl">
-                    <div class="grid grid-cols-3 gap-1.5">
+                    <div class="grid grid-cols-3 gap-2">
                         <!-- image left -->
-                        <div class="col-span-2">
-                            <img src="./src/assets/corporate/office4.png" alt="" class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                        <div class="col-span-2 aspect-[4/3]">
+                            <img src="./src/assets/corporate/office4.png" alt=""
+                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
-                        <div class="flex flex-col gap-1.5">
-                            <img src="./src/assets/corporate/office6.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
-                            <img src="./src/assets/corporate/office8.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                        <div class="flex flex-col gap-2">
+                            <img src="./src/assets/corporate/office6.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                            <img src="./src/assets/corporate/office8.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
-                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Remodelaciones y reformas</h3>
-                        <p class="font-montserrat text-xs lg:text-sm text-center">Rediseñamos espacios existentes para darles un nuevo enfoque.</p>
+                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Remodelaciones y
+                            reformas</h3>
+                        <p class="font-montserrat text-xs lg:text-sm text-center">Rediseñamos espacios existentes para
+                            darles un nuevo enfoque.</p>
                     </div>
                 </div>
                 <!-- card personalized assistance -->
                 <div class="backdrop-blur-3xl bg-coconutmilk/30 border border-coconutmilk/20 rounded-2xl p-6 shadow-xl">
-                    <div class="grid grid-cols-3 gap-1.5">
+                    <div class="grid grid-cols-3 gap-2">
                         <!-- image left -->
-                        <div class="col-span-2">
-                            <img src="./src/assets/condominium/con3.png" alt="" class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                        <div class="col-span-2 aspect-[4/3]">
+                            <img src="./src/assets/condominium/con3.png" alt=""
+                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
-                        <div class="flex flex-col gap-1.5">
-                            <img src="./src/assets/housing/hab2.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
-                            <img src="./src/assets/housing/hab6.png" alt="" class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                        <div class="flex flex-col gap-2">
+                            <img src="./src/assets/housing/hab2.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                            <img src="./src/assets/housing/hab6.png" alt=""
+                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
-                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Asesorías personalizadas</h3>
-                        <p class="font-montserrat text-xs lg:text-sm text-center">Ofrecemos sesiones de asesoría online o presencial, desde la elección de una paleta de colores, hasta la distribución de espacios.</p>
+                        <h3 class="font-montserrat text-sm lg:text-base font-semibold text-center">Asesorías
+                            personalizadas</h3>
+                        <p class="font-montserrat text-xs lg:text-sm text-center">Ofrecemos sesiones de asesoría online
+                            o presencial, desde la elección de una paleta de colores, hasta la distribución de espacios.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="home-why-us pt-6">
+            <div class="page-divider">
+                <hr class="border-olive/50 max-w-[40%] mx-auto">
+            </div>
+            <div class="pt-6 px-5">
+                <h2 class="font-montserrat font-semibold text-base md:text-2xl text-center pb-2.5 cursor-pointer">¿Por
+                    qué nosotros?</h2>
+                <p class="font-montserrat text-xs md:text-base text-center ursor-pointer">Trabajamos de forma
+                    personalizada, acompañando cada etapa del proceso con claridad, empatía y compromiso,<br>para que tu
+                    experiencia sea tan agradable como el resultado final.</p>
+            </div>
+            <div class="w-full py-6">
+                <img src="./public/designer_mind.svg" alt=""
+                    class="mx-auto max-w-32 md:max-w-40 lg:max-w-52 object-cover">
+            </div>
+        </section>
+        <section class="home-contact bg-oak py-6">
+            <div class="px-5">
+                <h3
+                    class="font-montserrat font-light text-coconutmilk text-sm md:text-xl text-center pb-2.5 cursor-pointer">
+                    ¡Transforma tus espacios con nosotros!</h3>
+            </div>
+            <div class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-md space-y-4">
+                <h2 class="text-xl font-semibold text-gray-800">Contáctanos hoy</h2>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1" for="name">Nombre</label>
+                    <input type="text" id="name"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-olive/50"
+                        placeholder="Tu nombre.." />
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1" for="email">Email</label>
+                    <input type="email" id="email"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-olive/50"
+                        placeholder="tu-correo@dominio.com" />
+                </div>
+                <div>
+                    <label class="block text-sm text-gray-600 mb-1" for="message">Mensaje</label>
+                    <textarea id="message" rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-olive/50"
+                        placeholder="Escribenos..."></textarea>
+                </div>
+                <button class="w-full bg-olive text-white py-2 rounded-lg hover:bg-olive/90 transition">
+                    Enviar
+                </button>
+            </div>
+        </section>
     </main>
-    <footer class="flex flex-col w-full bg-olive text-white relative bottom-0 left-0">
+    <footer class="footer flex flex-col w-full bg-olive text-white relative bottom-0 left-0">
         <div class="max-w-full mx-auto justify-center items-center p-6">
             <p class="text-sm">&copy; 2025 ES Studio.<br>All rights reserved.</p>
         </div>

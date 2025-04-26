@@ -227,9 +227,6 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
-  .mb-5 {
-    margin-bottom: calc(var(--spacing) * 5);
-  }
   .block {
     display: block;
   }
@@ -257,14 +254,32 @@
   .h-full {
     height: 100%;
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-5\.5 {
     width: calc(var(--spacing) * 5.5);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-15 {
     width: calc(var(--spacing) * 15);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
   }
   .w-125 {
     width: calc(var(--spacing) * 125);
@@ -287,14 +302,8 @@
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .cursor-auto {
-    cursor: auto;
-  }
   .cursor-default {
     cursor: default;
-  }
-  .cursor-none {
-    cursor: none;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -416,8 +425,23 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
+  }
+  .px-72 {
+    padding-inline: calc(var(--spacing) * 72);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -469,10 +493,6 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-xs {
     font-size: var(--text-xs);
@@ -563,20 +583,6 @@
       }
     }
   }
-  .hover\:cursor-default {
-    &:hover {
-      @media (hover: hover) {
-        cursor: default;
-      }
-    }
-  }
-  .hover\:cursor-pointer {
-    &:hover {
-      @media (hover: hover) {
-        cursor: pointer;
-      }
-    }
-  }
   .hover\:bg-olive\/90 {
     &:hover {
       @media (hover: hover) {
@@ -623,9 +629,19 @@
       outline-style: none;
     }
   }
+  .md\:w-50 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
   .md\:w-70 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 70);
+    }
+  }
+  .md\:w-125 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 125);
     }
   }
   .md\:max-w-40 {
@@ -636,6 +652,16 @@
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:px-5 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 5);
     }
   }
   .md\:px-20 {

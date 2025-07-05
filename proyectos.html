@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>ES Studio</title>
+    <link href="./public/ES_Icon.svg" rel="shortcut icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Photo Sphere Viewer CSS -->
+    <link href="https://unpkg.com/photo-sphere-viewer@5/dist/photo-sphere-viewer.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/three" defer></script>
+    <script src="https://unpkg.com/photo-sphere-viewer@5" defer></script>
+    <script src="./src/js/gallery_slider.js" defer></script>
+    <script src="./src/js/nav_intersector.js" defer></script>
+</head>
+
+<body class="bg-coconutmilk">
+    <div class="page-header flex-col flex">
+        <nav id="navbar" class="fixed top-0 w-full backdrop-blur-sm bg-coconutmilk/10 text-white border-b border-black/10 px-15 py-2.5 transition-all duration-500 z-50">
+            <div role="content"
+                class="flex justify-center lg:justify-between items-center font-montserrat text-black text-lg tracking-wide font-light">
+                <div class="hidden lg:flex gap-x-6">
+                    <a class="hover:font-bold hover:text-xl" href="/">Home</a>
+                    <a class="hover:font-bold hover:text-xl" href="/">Nosotros</a>
+                </div>
+                <div class="flex">
+                    <a href="/">
+                        <img src="./public/ES_Icon.svg" alt="ES Studio" class="w-15 h-15" />
+                    </a>
+                </div>
+                <div class="hidden lg:flex gap-x-6">
+                    <a class="hover:font-bold hover:text-xl" href="/">Servicios</a>
+                    <a class="hover:font-bold hover:text-xl" href="/">Proyectos</a>
+                    <a class="hover:font-bold hover:text-xl" href="/">Contacto</a>
+                </div>
+                <button id="menu-btn" class="lg:hidden absolute right-5 cursor-pointer">
+                    <div class="flex flex-col gap-1.5">
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                        <span class="w-5.5 h-0.5 bg-black"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+        <div
+            class="page-home flex flex-row justify-center items-center px-6 pt-30 md:px-20 lg:px-32 lg:gap-5">
+            <div class="text-center font-montserrat leading-normal justify-center">
+                <h1 class="text-base md:text-1xl lg:text-2xl cursor-default">
+                    <span class="font-semibold text-black">Explora los espacios</span>
+                </h1>
+                <h2 class="text-base md:text-1xl lg:text-2xl cursor-default">Descubre los espacios que podemos crear para tí  </h2>
+            </div>
+        </div>
+        <div id="nav-event"
+       class="absolute top-[100px] h-1 w-full opacity-0 pointer-events-none z-[-1]">
+    </div>
+    <main class="main font-montserrat">
+        <section id="project-gallery" class="min-h-screen pt-10">
+            <div class="overflow-hidden relative">
+                <img 
+                    id="gallery-img" 
+                    class="w-full h-full object-cover transition-opacity duration-1000 ease-in-out" 
+                    src="src/assets/housing/cabin1.png" 
+                    alt="Galería ES Studio"/>
+            </div>
+        </section class="h-screen bg-white">
+        <section id="xplor-360" class="home-services py-12">
+            <div class="px-5">
+              <h2 class="font-montserrat font-semibold text-base md:text-2xl text-center pb-2.5 cursor-default">
+                Exploración 360°
+              </h2>
+              <p class="font-montserrat text-xs md:text-base text-center cursor-default">
+                Sumérgete en el espacio como si estuvieras ahí y descubre cada detalle
+                desde una perspectiva envolvente.
+              </p>
+            </div>
+        
+            <div class="page-divider pt-6">
+              <hr class="border-olive/50 max-w-[40%] mx-auto">
+            </div>
+        
+            <!-- primer visor 360° -->
+            <div class="flex justify-center mt-15">
+              <iframe
+                src="https://momento360.com/e/u/10e4cdea60de4b24be26af3b6b91119c?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+                width="100%"
+                height="100%"
+                allowfullscreen
+                frameborder="0"
+                class="w-full max-w-[70%] h-[400px] rounded-lg shadow-md border border-black/10 overflow-hidden">
+              </iframe>
+            </div>
+        
+            <!-- segundo visor 360° -->
+            <div class="flex justify-center mt-15">
+              <div class="w-full max-w-[70%] h-[400px] rounded-lg shadow-md border border-black/10 overflow-hidden">
+                <iframe
+                  src="https://momento360.com/e/u/30780432dce24d1ba661e6267d812285?utm_campaign=embed&utm_source=other&heading=-7.1&pitch=0.3&field-of-view=75&size=medium&display-plan=true"
+                  width="100%"
+                  height="100%"
+                  allowfullscreen
+                  frameborder="0"
+                  class="rounded-lg">
+                </iframe>
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer flex flex-col w-full bg-olive text-white relative bottom-0 left-0">
+        <div class="max-w-full mx-auto justify-center items-center p-6">
+            <p class="text-sm">&copy; 2025 ES Studio.<br>All rights reserved.</p>
+        </div>
+        <div class="wave-footer">
+            <svg data-name="Wave Footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </footer>
+</body>
+</html>

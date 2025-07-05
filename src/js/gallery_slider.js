@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         imgEl.classList.remove("fade-out");
       };
     }, 600); // Tiempo igual al de la transición CSS
-  }, 5000);
+  }, 4000);
 
   // VISOR 360°
   new PhotoSphereViewer.Viewer({

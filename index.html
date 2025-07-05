@@ -9,6 +9,7 @@
     <link href="./public/ES_Icon.svg" rel="shortcut icon" type="image/svg+xml" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <script src="./src/js/scroll.js" defer></script>
+    <script src="./src/js/expand_image.js" defer></script>
 </head>
 
 <body class="bg-coconutmilk">
@@ -105,14 +106,14 @@
                         <!-- image left -->
                         <div class="col-span-2 aspect-[4/3]">
                             <img src="./src/assets/housing/cabin2.png" alt=""
-                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                                class="expandable-img w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
                         <div class="flex flex-col gap-2">
                             <img src="./src/assets/housing/cabin4.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                             <img src="./src/assets/housing/cabin3.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
@@ -128,14 +129,14 @@
                         <!-- image left -->
                         <div class="col-span-2 aspect-[4/3]">
                             <img src="./src/assets/commercial/terr1.png" alt=""
-                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                                class="expandable-img w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
                         <div class="flex flex-col gap-2">
                             <img src="./src/assets/commercial/com1_bar.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                             <img src="./src/assets/commercial/com2.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
@@ -151,14 +152,14 @@
                         <!-- image left -->
                         <div class="col-span-2 aspect-[4/3]">
                             <img src="./src/assets/corporate/office4.png" alt=""
-                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                                class="expandable-img w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
                         <div class="flex flex-col gap-2">
                             <img src="./src/assets/corporate/office6.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                             <img src="./src/assets/corporate/office8.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
@@ -174,14 +175,14 @@
                         <!-- image left -->
                         <div class="col-span-2 aspect-[4/3]">
                             <img src="./src/assets/condominium/con3.png" alt=""
-                                class="w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
+                                class="expandable-img w-full h-full object-cover rounded-lg transition duration-500 hover:scale-105">
                         </div>
                         <!-- images right -->
                         <div class="flex flex-col gap-2">
                             <img src="./src/assets/housing/hab2.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                             <img src="./src/assets/housing/hab6.png" alt=""
-                                class="w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
+                                class="expandable-img w-full h-1/2 object-cover rounded-lg transition duration-500 hover:scale-125">
                         </div>
                     </div>
                     <div class="pt-3">
@@ -192,6 +193,14 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <!-- Modal -->
+            <div id="image-modal" 
+                class="fixed inset-0 z-50 bg-black/80 items-center flex hidden justify-center"
+                onclick="closeImage()">
+              <img
+                id="modal-img"
+                class="max-w-[90%] max-h-[90%] shadow-lg rounded-lg"/>
             </div>
         </section>
         <section id="contact" class="home-why-us pt-6">
